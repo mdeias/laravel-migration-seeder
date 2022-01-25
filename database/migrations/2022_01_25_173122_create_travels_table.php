@@ -20,8 +20,8 @@ class CreateTravelsTable extends Migration
             $table->string("durata", 20);
             $table->string("partenza", 30);
             $table->string("destinazione", 30);
-            $table->text("descrizione")->nullable();
-            $table->decimal("prezzo", 5, 2);
+            $table->text("descrizione");
+            $table->decimal("prezzo", 2, 4);
 
             $table->timestamps();
             
